@@ -1,10 +1,11 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div>
-        <p className="text-7xl">Tailwind configured</p>
+      <Navbar></Navbar>
     </div>
   );
 }
