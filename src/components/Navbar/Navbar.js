@@ -6,7 +6,7 @@ function Navbar() {
             <div className="w-screen bg-gray-100 h-20 flex justify-around items-center">
                
                     <p className="text-3xl">Foreseer</p>
-                    <div className="flex gap-10">
+                    <div className="flex gap-10 hidden md:flex">
                         <p>About Us</p>
                         <p>Why Foreseer</p>
                         <p>Talks</p>
