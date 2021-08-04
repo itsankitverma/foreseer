@@ -1,9 +1,10 @@
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
-        <p className="text-7xl">Tailwind configured</p>
+        <Navbar/>
     </div>
   );
 }
