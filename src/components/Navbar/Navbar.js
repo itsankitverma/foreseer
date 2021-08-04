@@ -15,7 +15,6 @@ function Navbar() {
                     <button className="border-4 border-yellow-600 border-opacity-100 p-1 text-yellow-600 w-36 h-12 hover:bg-yellow-600 hover:text-white transition delay-150 duration-300 ease-in-out">
                         Contact Us
                     </button>
-            
             </div>
         </div>
     )
