@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div>
-        <Navbar/>
+        <p className="text-7xl">Tailwind configured</p>
     </div>
   );
 }
