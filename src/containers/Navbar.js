@@ -4,19 +4,23 @@ export const title = "Foreseer";
 export const contactUs = "Contact Us";
 export const navbarLinks = [
   {
-    title: "About Us",
-    hlink: "",
+    title: "Industries",
+    rlink: "#",
   },
   {
-    title: "Why Foreseer",
-    hlink: "",
+    title: "Services",
+    rlink: "#",
   },
   {
-    title: "Talks",
-    hlink: "",
+    title: "Product Platform",
+    rlink: "#",
   },
   {
-    title: "Community",
-    hlink: "",
+    title: "Career",
+    rlink: "#",
+  },
+  {
+    title: "Insights",
+    rlink: "#",
   },
 ];
