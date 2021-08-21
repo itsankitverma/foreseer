@@ -1,11 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Helmet } from "react-helmet";
 
 const Landingpage = () => {
   const [visible, setvisible] = useState(false);
   return (
     <div>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home</title>
+      </Helmet>
       {/* navigation bar */}
       <div className="background text-white relative">
         <div className="flex justify-between items-center px-20 py-6 sticky top-0 gap-10">
