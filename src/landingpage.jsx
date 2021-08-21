@@ -40,7 +40,7 @@ const Landingpage = () => {
             business
           </h1>
           <div className="p-4 mt-4 bg-gray-800 w-max rounded-xl cursor-pointer hover:border-2 hover:border-white">
-            Get in touch
+            <a href="#contact-us">Get in touch</a>
           </div>
         </div>
       </div>
