@@ -5,15 +5,3 @@
 .body-bg-color {
   background-color: #111827;
 }
-
-.background {
-  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
-  height: 100vh;
-  background-size: cover;
-}
-
-.backgroundhero {
-  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
-  height: 100vh;
-  background-size: cover;
-}
