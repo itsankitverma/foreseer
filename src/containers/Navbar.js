@@ -1,19 +1,26 @@
-// constant datas for Navbar 
+// constant datas for Navbar
 
-export const title = "Foreseer"
-export const contactUs = "Contact Us"
+export const title = "Foreseer";
+export const contactUs = "Contact Us";
 export const navbarLinks = [
-    {
-        title:"About Us"
-    },
-    {
-        title:"Why Foreseer"
-    },
-    {
-        title:"Talks"
-    },
-    {
-        title:"Community"
-    }
-]
-
+  {
+    title: "Industries",
+    rlink: "#",
+  },
+  {
+    title: "Services",
+    rlink: "#",
+  },
+  {
+    title: "Product Platform",
+    rlink: "#",
+  },
+  {
+    title: "Career",
+    rlink: "#",
+  },
+  {
+    title: "Insights",
+    rlink: "#",
+  },
+];

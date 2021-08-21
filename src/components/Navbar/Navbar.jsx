@@ -1,32 +1,56 @@
-import React from "react";
-import { title, contactUs, navbarLinks } from "../../containers/Navbar";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { contactUs, navbarLinks, title } from "../../containers/Navbar";
 
-function Navbar() {
+const Navbar = () => {
+  const [visible, setvisible] = useState(false);
   return (
     <div>
-      <div className="w-screen bg-gray-100 h-20 flex justify-around items-center">
-<<<<<<< HEAD
-        <p className="text-3xl" data-testid="titleId">{title}</p>
-        <div className="gap-10 hidden md:flex">
-          {navbarLinks.map((val, id) => {
-            return <p className="cursor-pointer" data-testid="navLinksId" key={id}>{val.title}</p>;
-          })}
+      <div className="text-gray-400 bg-gray-900 w-screen h-20 flex justify-around items-center">
+        <div className="text-3xl">{title}</div>
+        <div>
+          <div className="flex gap-10">
+            {navbarLinks.map((val, id) => {
+              return (
+                <a
+                  href={val.rlink}
+                  className="text-lg hover:text-white hidden lg:block"
+                  key={id}
+                >
+                  {val.title}
+                </a>
+              );
+            })}
+          </div>
         </div>
-        <button data-testid="contactId" className="border-4 border-yellow-600 border-opacity-100 p-1 text-yellow-600 w-36 h-12 hover:bg-yellow-600 hover:text-white transition delay-150 duration-300 ease-in-out">
-=======
-        <p className="text-3xl">{title}</p>
-        <div className="gap-10 hidden md:flex">
-          {navbarLinks.map((val, id) => {
-            return <p className="cursor-pointer">{val.title}</p>;
-          })}
+        <div className="p-2 bg-red-500 text-white rounded-3xl text-lg hidden lg:block hover:shadow-2xl">
+          <a href="#">{contactUs}</a>
         </div>
-        <button className="border-4 border-yellow-600 border-opacity-100 p-1 text-yellow-600 w-36 h-12 hover:bg-yellow-600 hover:text-white transition delay-150 duration-300 ease-in-out">
->>>>>>> 1f95a1be1997fb2d75fb88ce17b1c75ef576acb6
-          {contactUs}
-        </button>
+        <buttpn className="block lg:hidden">
+          <GiHamburgerMenu onClick={() => setvisible(!visible)} />
+        </buttpn>
       </div>
+      {visible === true ? (
+        <>
+          {navbarLinks.map((val, id) => {
+            return (
+              <div
+                key={id}
+                className="flex flex-col bg-gray-100 justify-center items-center gap-10 lg:hidden py-4"
+              >
+                <a href={val.rlink} className="text-lg md:block p-1">
+                  {val.title}
+                </a>
+              </div>
+            );
+          })}
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
-}
+};
 
 export default Navbar;
