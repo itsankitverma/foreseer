@@ -24,7 +24,7 @@ const Navbar = () => {
             })}
           </div>
         </div>
-        <div className="p-2 bg-red-500 text-white rounded-3xl text-lg hidden lg:block hover:shadow-2xl">
+        <div className="p-2 bg-red-500 text-white rounded-xl text-lg hidden lg:block hover:shadow-2xl">
           <a href="#">{contactUs}</a>
         </div>
         <buttpn className="block lg:hidden">
