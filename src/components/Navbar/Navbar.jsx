@@ -7,7 +7,7 @@ const Navbar = () => {
   const [visible, setvisible] = useState(false);
   return (
     <div>
-      <div className="text-gray-400 bg-gray-900 w-screen h-20 flex justify-around items-center">
+      <div className="text-gray-400 bg-gray-900 w-full h-20 flex justify-around items-center">
         <div className="text-3xl">{title}</div>
         <div>
           <div className="flex gap-10">
