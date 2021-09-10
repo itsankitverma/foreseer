@@ -1,6 +1,6 @@
 {
   "name": "foreseer",
-  "version": "0.0.2",
+  "version": "0.0.01",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.14.1",
